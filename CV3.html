@@ -1,0 +1,88 @@
+import React from 'react';
+import './App.css'; 
+
+function App() {
+  return (
+    <div className="content-container">
+      <h1>Kacper Sobieszczyk</h1>
+      <p>Wsparcie IT HR&PAYROLL TEAM</p>
+      <p>
+        Jestem Studentem 3 roku informatyki Front END. <br />
+        Na codzień pracuję jako wsparcie merytoryczno-techniczne dla działu HR&PAYROLL, <br />
+        między innymi rozwiązując bieżące problemy z działaniem <br />
+        programu Enova365 oraz płatnik, jak również implementując <br />
+        łatki programistyczne, na podnoszeniu wersji programu kończąc.<br />
+      </p>
+
+      <h2 className="edukacja">Edukacja</h2>
+      <p className="szkola">
+        Informatyka Front-End od 2021 do 2025r<br />
+        kursy SQL oraz Python maj 2022<br />
+      </p>
+
+      <h2 className="jezyk">Języki</h2>
+      <p className="jezyki">
+        Angielski C1 (Zaawansowany)<br />
+        Polski Ojczysty<br />
+        Niemiecki B1 (komunikatywny)
+      </p>
+
+      <h2 className="doswiadczenie">Doświadczenie:</h2>
+      <p className="qatech">
+        Kontrola Jakości listopad 2019 - sierpień 2022 - 2 lata 7 miesięcy - DS SMITH
+      </p>
+      <p className="qaspec">
+        Wsparcie techniczne HR&PAYROLL - sierpień 2022 - obecnie - PriceWaterhouse Coopers
+      </p>
+
+      <h2 className="umiejetnosci">Umiejętności:</h2>
+      <ul className="skill">
+        <li>Enova365</li>
+        <li>DEVOPS</li>
+        <li>SQL</li>
+        <li>Narzędzia Microsoft</li>
+        <li>System zgłoszeniowy Odoo</li>
+        <li>CyberArk</li>
+        <li>Płatnik</li>
+      </ul>
+
+      <div className="skill-details">
+        <p><strong>Enova365:</strong> Bieżąca obsługa klienckich portali Enova365...</p>
+        <p><strong>Narzędzia Microsoft:</strong> Tworzenie formatek do wgrywania danych...</p>
+        <p><strong>CyberArk:</strong> Wykorzystywałem CyberArk w celu stawiania symulacji...</p>
+        <p><strong>Płatnik:</strong> Koordynowałem oraz współuczestniczyłem w pomocy technicznej...</p>
+        <p><strong>SQL:</strong> Szukałem usprawnień na bazach danych...</p>
+        <p><strong>DevOps:</strong> Komunikacja z zespołem programistów w celu zgłaszania błędów...</p>
+        <p><strong>Odoo:</strong> Bieżąca opieka zgłoszeń dot. problemów jak i błędów...</p>
+      </div>
+
+      <img src="doCV.png" alt="ja" className="ja" />
+      <Contact />
+    </div>
+  );
+}
+
+function Contact() {
+  return (
+    <div>
+      <div>
+        <img src="phone.png" alt="phone" />
+        <a href="tel:+48785883579">785883579</a>
+      </div>
+      <div>
+        <img src="adress.png" alt="address" />
+        <span>Koński Jar 10 Warszawa 02-785</span>
+      </div>
+      <div>
+        <img src="gmail.png" alt="email" />
+        <a href="mailto:Kacper.Sobieszczyk00@gmail.com">Kacper.Sobieszczyk00@gmail.com</a>
+      </div>
+      <div>
+        <img src="upwork.png" alt="upwork" />
+        <a href="https://www.upwork.com/freelancers/~0132ed7656cc1d955f">Upwork</a>
+      </div>
+    </div>
+  );
+}
+
+export default App;
