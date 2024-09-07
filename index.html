@@ -1,88 +1,83 @@
-import React from 'react';
-import './App.css'; 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Kacper Sobieszczyk CV</title>
+</head>
+<body>
+  <div class="content-container">
+    <h1>Kacper Sobieszczyk</h1>
+    <p class="subtitle">Wsparcie IT HR&PAYROLL TEAM</p>
+    <p>
+      Jestem Studentem 3 roku informatyki Front END. <br>
+      Na codzień pracuję jako wsparcie merytoryczno-techniczne dla działu HR&PAYROLL, <br>
+      rozwiązując biężące problemy z działaniem programu Enova365 oraz Płatnik, <br>
+      jak również implementując łatki programistyczne i podnosząc wersje programu.
+    </p>
 
-function App() {
-  return (
-    <div className="content-container">
-      <h1>Kacper Sobieszczyk</h1>
-      <p>Wsparcie IT HR&PAYROLL TEAM</p>
-      <p>
-        Jestem Studentem 3 roku informatyki Front END. <br />
-        Na codzień pracuję jako wsparcie merytoryczno-techniczne dla działu HR&PAYROLL, <br />
-        między innymi rozwiązując bieżące problemy z działaniem <br />
-        programu Enova365 oraz płatnik, jak również implementując <br />
-        łatki programistyczne, na podnoszeniu wersji programu kończąc.<br />
-      </p>
+    <h2>Edukacja</h2>
+    <p class="szkola">Informatyka Front-End od 2021 do 2025r<br>
+    kursy SQL oraz Python maj 2022<br></p>
 
-      <h2 className="edukacja">Edukacja</h2>
-      <p className="szkola">
-        Informatyka Front-End od 2021 do 2025r<br />
-        kursy SQL oraz Python maj 2022<br />
-      </p>
+    <h2>Języki</h2>
+    <p>Angielski C1 (Zaawansowany)<br>
+    Polski Ojczysty<br>
+    Niemiecki B1 (komunikatywny)</p>
 
-      <h2 className="jezyk">Języki</h2>
-      <p className="jezyki">
-        Angielski C1 (Zaawansowany)<br />
-        Polski Ojczysty<br />
-        Niemiecki B1 (komunikatywny)
-      </p>
+    <h2>Doświadczenie</h2>
+    <p>Kontrola Jakości listopad 2019 - sierpień 2022 - 2 lata 7 miesięcy - DS SMITH<br>
+    Wsparcie techniczne HR&PAYROLL - sierpień 2022 - obecnie - PriceWaterhouse Coopers</p>
 
-      <h2 className="doswiadczenie">Doświadczenie:</h2>
-      <p className="qatech">
-        Kontrola Jakości listopad 2019 - sierpień 2022 - 2 lata 7 miesięcy - DS SMITH
-      </p>
-      <p className="qaspec">
-        Wsparcie techniczne HR&PAYROLL - sierpień 2022 - obecnie - PriceWaterhouse Coopers
-      </p>
+    <h2>Umiejętności</h2>
+    <ul class="skills">
+      <li>Enova365</li>
+      <li>DEVOPS</li>
+      <li>SQL</li>
+      <li>Narzędzia Microsoft</li>
+      <li>System zgłoszeniowy Odoo</li>
+      <li>CyberArk</li>
+      <li>Płatnik</li>
+    </ul>
 
-      <h2 className="umiejetnosci">Umiejętności:</h2>
-      <ul className="skill">
-        <li>Enova365</li>
-        <li>DEVOPS</li>
-        <li>SQL</li>
-        <li>Narzędzia Microsoft</li>
-        <li>System zgłoszeniowy Odoo</li>
-        <li>CyberArk</li>
-        <li>Płatnik</li>
-      </ul>
+    <h3>Opis Umiejętności</h3>
+    <p>
+      <strong>Enova365:</strong> Bieżąca obsługa klienckich portali Enova365, usuwanie błędów, podnoszenie wersji systemów oraz prowadzenie helpdesk portalu.<br>
+      <strong>Narzędzia Microsoft:</strong> Tworzenie formatek do wgrywania danych na Enova365, importowanie raportów do Excel w celu symulacji błędów.<br>
+      <strong>CyberArk:</strong> Wykorzystywałem CyberArk w celu stawiania symulacji baz Enova365.<br>
+      <strong>Płatnik:</strong> Koordynowałem oraz współuczestniczyłem w pomocy technicznej przy programie płatnik.<br>
+      <strong>SQL:</strong> Szukałem usprawnień na bazach danych.<br>
+      <strong>DevOPS:</strong> Komunikacja z zespołem programistów w celu zgłaszania błędów oraz implementacji poprawek do Enova365.<br>
+      <strong>Odoo:</strong> Bieżąca opieka zgłoszeń dot. problemów jak i błędów w Enova365 oraz Płatnik.<br>
+    </p>
 
-      <div className="skill-details">
-        <p><strong>Enova365:</strong> Bieżąca obsługa klienckich portali Enova365...</p>
-        <p><strong>Narzędzia Microsoft:</strong> Tworzenie formatek do wgrywania danych...</p>
-        <p><strong>CyberArk:</strong> Wykorzystywałem CyberArk w celu stawiania symulacji...</p>
-        <p><strong>Płatnik:</strong> Koordynowałem oraz współuczestniczyłem w pomocy technicznej...</p>
-        <p><strong>SQL:</strong> Szukałem usprawnień na bazach danych...</p>
-        <p><strong>DevOps:</strong> Komunikacja z zespołem programistów w celu zgłaszania błędów...</p>
-        <p><strong>Odoo:</strong> Bieżąca opieka zgłoszeń dot. problemów jak i błędów...</p>
+    <div class="contact-info">
+      <img src="doCV.png" alt="ja" class="ja">
+      <div class="phone">
+        <img src="phone.png" alt="telefon">
+        <a href="tel:+48785883579" class="phone-number">785883579</a>
       </div>
-
-      <img src="doCV.png" alt="ja" className="ja" />
-      <Contact />
-    </div>
-  );
-}
-
-function Contact() {
-  return (
-    <div>
-      <div>
-        <img src="phone.png" alt="phone" />
-        <a href="tel:+48785883579">785883579</a>
+      <div class="address">
+        <img src="adress.png" alt="adres">
+        <span class="adress-opis">Koński Jar 10 Warszawa 02-785</span>
       </div>
-      <div>
-        <img src="adress.png" alt="address" />
-        <span>Koński Jar 10 Warszawa 02-785</span>
+      <div class="email">
+        <img src="gmail.png" alt="gmail">
+        <a href="mailto:Kacper.Sobieszczyk00@gmail.com" class="gmail-opis">Kacper.Sobieszczyk00@gmail.com</a>
       </div>
-      <div>
-        <img src="gmail.png" alt="email" />
-        <a href="mailto:Kacper.Sobieszczyk00@gmail.com">Kacper.Sobieszczyk00@gmail.com</a>
-      </div>
-      <div>
-        <img src="upwork.png" alt="upwork" />
-        <a href="https://www.upwork.com/freelancers/~0132ed7656cc1d955f">Upwork</a>
+      <div class="upwork">
+        <img src="upwork.png" alt="upwork">
+        <a href="https://www.upwork.com/freelancers/~0132ed7656cc1d955f" class="upwork-opis">Upwork</a>
       </div>
     </div>
-  );
-}
 
-export default App;
+    <div class="divider blue-square"></div>
+    <div class="divider blue-line"></div>
+    <div class="divider blue-line2"></div>
+    <div class="divider blue-line3"></div>
+    <div class="divider dark-square"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
