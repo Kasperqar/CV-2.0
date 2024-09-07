@@ -1,37 +1,26 @@
-{
-  "name": "my-cv",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "https://yourusername.github.io/kacper-sobieszczyk-cv",
-  "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
-}
+document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll(".ja");
+  
+    images.forEach(image => {
+        image.addEventListener("mouseenter", function () {
+            images.forEach(otherImage => {
+                if (otherImage !== image) {
+                    otherImage.style.filter = "grayscale(1)";
+                    otherImage.style.transform = "scale(1)";
+                }
+            });
+  
+            image.style.filter = "grayscale(0)";
+            image.style.transform = "scale(1.4)";
+            image.style.zIndex = 4; // Ustawienie wyższego indeksu z warstwy
+        });
+  
+        image.addEventListener("mouseleave", function () {
+            images.forEach(otherImage => {
+                otherImage.style.filter = "grayscale(0)";
+                otherImage.style.transform = "scale(1)";
+                otherImage.style.zIndex = 3; // Przywrócenie pierwotnego indeksu z warstwy
+            });
+        });
+    });
+});
